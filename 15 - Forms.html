@@ -1,0 +1,31 @@
+<!--
+    -Capturar Dados de entrada
+    -Input -> Entrada
+
+    Action->define para qual url será enviado os dados, vazio envia para a mesma url method
+        - GET
+        -POST
+-->
+
+<form action="" method="get" enctype="multipart/form-data"><!--Action indica para onde vamos enviar nossos dados com o formulario submetido, se ele estiver vazio esses mesmos dados vão para a url da pagina, com a programação podemos enviar para um banco de dados ou ate uma planilha, no method diz a forma que vamos enviar os dados com o metodo get é toda vez que enviamos dados para um servidor, neste metodo a comunicação é por meio da url, no metodo post ele envia por baixo dos panos escondido, exemplo de uma operação de cartoes de credito que precisa esconder esses dados na transação que não mostrando na url, quando usamos na tag o enctype="multipart/form-data informamos ao servidor que estamos enviando um arquivo-->
+    <h1>Digite seu Endereço</h1>
+    <label>
+        Rua:
+        <input type="text" name="rua" autocomplete="street-address"/>
+    </label>
+    <label>
+        Número:
+        <input type="number" name="numero" autocomplete="number"/>
+    </label>
+    <label>E-mail
+        <input type="email" name="email"><!--Quando usamoe este de tipo de formulario ja sabe que será necessário um e-mail -->
+    </label>
+    <label>
+        Foto:
+        <input type="file" name="Arquivo"/> <!--Para fazer upload de arquivos, quando usamos este tipo de type precisamos informar no form enctype="multipart/form-data para poder enviar os arquivos-->
+    </label>
+
+    <button type="submit">Enviar dados</button>
+    <button type="reset">Reset dados</button><!--Dentro dos formularios sempre devemos ter um botão submit para que ao final do preenchimento possamos enviar nossas informaçãoe, os formularios são inteligentes e este botão tem que estar dentro do forms, type reset limpa todos so campos-->
+</form>
+<!

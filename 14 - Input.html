@@ -1,0 +1,66 @@
+<!--INPUT-->
+
+<input autocomplete="address-level1" disabled readonly placeholder="Em que Rua vc mora" value="Eduardo"/><!--Aqui podemos ver varios parametros na forma tradicional de configurar a tag mas que deixa a desejar quando o mecanismo de busca precisar utilizalas, temos o parametro disabled que desabilita o input, podemos deixalo apenas para leitura e inserir um valor de forma automatica, o placeholver é o texto quando o input esta vazio-->
+<br>
+<label>
+    Rua:
+    <input autocomplete="street-address"
+    placeholder="Digite a sua rua"
+    />
+    </label><!--Para que o leitor de pagina se relacione com o input e possa ver as informações, assim envolvemos o input com o label, dando pertencimento um ao outro-->
+<br>
+<label for="rua">Rua:</label><!--O id identifica o input interligado a label, o for procura um id-->
+<input id="rua" autofocus><!--Desta forma fica melheor para os Mecanismos de busca localizarem a sua pagina, para a semantica diz que os dois estão juntos, com o autofocus o input começa focado não usar em todos colocar apenas um por pagina.-->
+
+<br>
+<br>
+<input type="color"> <!--Seleção de cores na paleta-->
+<br>
+
+<input type="range" min="0" max="100" value="50"> <!--Alça de preenchimento que podemos configurar o intervalo e valor inicial.-->
+<br>
+<input type="password"><!--input exclusivo para senhas-->
+<br>
+<input type="email"><!--Apenas para colocar emails, se tentar colocar outros dados ele ja sabe que ta errado a frente vamos ver como validar.-->
+<br>
+<label for="molho">Quer molho extra?
+    <input id="molho" type="checkbox">
+</label>
+<br>
+<label>
+    <input type="file" multiple accept=".jpg"><!--para fazer upload de arquivos, o multiple indica que podemos selecionar varias imagens, no accept podemos especificar que tipo de arquivo iremos permitir o upload onde podemos indicar a extensão ou tipo audio/* por exemplo-->
+</label>
+<br>
+<input type="number">
+<br>
+<input type="date">
+<br>
+<input type="datetime">
+<br>
+<input type="url">
+<br>
+<input type="radio"><!--para usar opções de seleção-->
+<br>
+
+<label for="Facebook">Facebook
+    <input type="radio" id="Facebook" name="redes-sociais">
+</label>
+<label for="Instagram">Instagram
+    <input type="radio" id="instagram" name="redes-sociais">
+</label>
+<label for="Youtube">Youtube</label>
+    <input type="radio" id="Youtube" name="redes-sociais">
+    <!--Se o name for igual podemos selecionar apenas um radio, ,mas se for diferente podemos selecionar varios, ele identifica que os radios pertencem ao mesmo grupo por isso seleciona apena um com nomes iguais. -->
+<br>
+<label for="Facebook">Facebook
+    <input type="radio" id="Facebook" name="redes-sociais1">
+</label>
+<label for="Instagram">Instagram
+    <input type="radio" id="instagram" name="redes-sociais2">
+</label>
+<label for="Youtube">Youtube</label>
+    <input type="radio" id="Youtube" name="redes-sociais3">
+
+
+
+
